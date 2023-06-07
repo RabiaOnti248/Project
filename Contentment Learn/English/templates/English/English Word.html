@@ -1,0 +1,279 @@
+{% load static %}
+
+<html>
+<head>
+    <title>English Word</title>
+    <link rel="icon" href='{% static "English/Group 931.png" %}' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #800080;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(0, 0, 0);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    table {
+      font-family: arial, sans-serif;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 5px solid #800080;
+      text-align: center;
+      width: 25%;
+      
+    }
+    
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    </style>
+</head>
+
+<body style="background-color: #32073F;">
+
+    <div class="navbar">
+        <a href="signup.html">Home</a>
+        <a href="Puzzle.html">Puzzle</a>
+        <div class="dropdown">
+          <button class="dropbtn">Education 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Bangla.html">Bangla</a>
+            <a href="English.html">English</a>
+            <a href="Number.html">Number</a>
+        <a href="Mathematics.html">Mathematics</a>
+        <a href="Human.html">Humun Body</a>
+          </div>
+
+        </div> 
+      </div>
+
+
+      <h1 style="color: #ffffff;"><b><center>English Word</center></b></h1>
+
+      <center>
+      <table>
+        <tr>
+          <th style="color: #ffffff;">Alphabets</th>
+          <th style="color: #ffffff;">Word</th>
+          <th style="color: #ffffff;">Picture</th>
+          
+        </tr>
+        <tr>
+          <td><img src='{% static "English/A@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Apple.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Apple-2.png" %}' alt="letter" width="20%" height="50%"></td>
+          
+        </tr>
+        <tr>
+          <td><img src='{% static "English/B@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Ball.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/basketball-ball.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "English/C@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Cat.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/cat-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "English/D@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Dog.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/dog-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "English/E@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Elephant.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/elephant-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "English/F@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Frog.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/frog-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/G@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Grass.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/grass-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/H@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Horse.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/horse-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/I@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Ice cream.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/ice-cream.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/J@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Jug.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/jug-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr> 
+          <td><img src='{% static "English/K@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Kite.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/kite-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>  '{% static "English/lion-1.png" %}'
+          <td><img src='{% static "English/L@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Lion.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/lion-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/M@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Mango.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/mango-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/N@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Nut.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/nut-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/O@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Orange.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/orange-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/P@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Pencil.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/pencil-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/Q@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Queen.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/queen-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>  
+          <td><img src='{% static "English/R@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Rabbit.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/rabbit-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/S@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Snake.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/snake-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/T@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/tiger-1.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Tiger.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/U@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Umbrella.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/umbrella-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/V@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Violin.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/violin-1.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/W@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Water lili.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/water-lily.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+      
+        <tr>
+          <td><img src='{% static "English/X@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/X-ray-1.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/x-ray.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "English/Y@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Yoyo-1.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/yoyo.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "English/Z@.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/Zebra.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "English/zoo.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+      </table>
+    </center>
+    
+
+
+</body>
+</html>

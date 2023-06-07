@@ -1,0 +1,354 @@
+{% load static %}
+
+<html>
+<head>
+    <title>ব্যঞ্জনবর্ণ</title>
+    <link rel="icon" href='{% static "Bangla/Group 928.png" %}' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #800080;
+      
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(0, 0, 0);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    table {
+      font-family: arial, sans-serif;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 5px solid #800080;
+      text-align: center;
+      width: 25%;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    </style>
+</head>
+
+<body style="background-color: #32073F;">
+
+  <div class="navbar">
+  
+    <a href="{% url 'signin' %}">Registration</a>  
+    <a href="{% url 'home' %}">Home</a>  
+   
+    <div class="dropdown">
+      <button class="dropbtn">Education 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="{% url 'Bangla' %}">Bangla</a>  
+        <a href="{% url 'English' %}">English</a>  
+        <a href= "{% url 'Number' %}">Number</a> 
+        <a href="{% url 'Mathematics' %}">Mathematics</a>   
+        <a href="{% url 'Human' %}">Humun Body</a> 
+      </div>
+   </div>
+  </div>
+
+
+      <h1 style="color: #ffffff;"><b><center>ব্যঞ্জনবর্ণ</center></b></h1>
+
+      <center>
+      <table>
+        <tr>
+          <th style="color: #ffffff;">অক্ষর</th>
+          <th style="color: #ffffff;">শব্দ</th>
+          <th style="color: #ffffff;">ছবি</th>
+          
+        </tr> 
+        <tr> 
+          <td><img src='{% static "Bangla/ক.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/কলা.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/kola.png" %}' alt="letter" width="20%" height="50%"></td>
+          
+        </tr>
+        <tr> 
+          <td><img src='{% static "Bangla/খ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/খরগোশ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/khorgosh.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr> 
+          <td><img src='{% static "Bangla/গ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/গাজর.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/gajor.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "Bangla/ঘ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/ঘাস.png" %}'  alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/ghash.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr> 
+        <tr>
+          <td><img src='{% static "Bangla/ঙ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/ব্যাঙ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/beng.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        <tr>
+          <td><img src='{% static "Bangla/চ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/চশমা.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/Chosma.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "Bangla/ছ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/ছাতা.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/chata.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr> 
+          <td><img src='{% static "Bangla/জ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/জাহাজ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/jahaj.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "Bangla/ঝ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/ঝিনুক.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/jhinuk.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+        
+        <tr>
+          <td><img src='{% static "Bangla/ঞ.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/মিঞা.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/miaa.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+        <tr>
+          <td><img src='{% static "Bangla/ট.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/টমেটো.png" %}' alt="letter" width="20%" height="50%"></td>
+          <td><img src='{% static "Bangla/tometo.png" %}' alt="letter" width="20%" height="50%"></td>
+        </tr>
+
+    </tr>
+    <tr>   
+      <td><img src='{% static "Bangla/ঠ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ঠেলাগাড়ি.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/thelagari.png" %}' alt="letter" width="20%" height="50%"></td>
+      
+    </tr>
+    <tr>  
+      <td><img src='{% static "Bangla/ড.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ডালিম.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/dalim.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+    <tr>
+      <td><img src='{% static "Bangla/ঢ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ঢোল.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/dhol.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+    <tr>
+      <td><img src='{% static "Bangla/ণ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/হরিণ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/horin.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+    <tr>
+      <td><img src='{% static "Bangla/ত.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/তবলা.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/tobla.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+    <tr>
+      <td><img src='{% static "Bangla/থ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/থালা.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/thala.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+    <tr>
+      <td><img src='{% static "Bangla/দ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/দোলনা.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/dolna.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+    <tr>
+      <td><img src='{% static "Bangla/ধ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ধান.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/Dhan.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+    <tr>
+      <td><img src='{% static "Bangla/ন.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/নয়ন.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/noyon.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+    <tr>
+      <td><img src='{% static "Bangla/প.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/পান.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/pan.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+    <tr>
+      <td><img src='{% static "Bangla/ফ.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ফুল.png" %}' alt="letter" width="20%" height="50%"></td>
+      <td><img src='{% static "Bangla/ful.png" %}' alt="letter" width="20%" height="50%"></td>
+    </tr>
+
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/ব.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/বল.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/bol.png" %}' alt="letter" width="20%" height="50%"></td>
+  
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/ভ.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/ভাত.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/Vaat.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/ম.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/মালা.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/mala.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/য.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/যাতি.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/jati.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/র.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/রংধনু.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/rongdhonu.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+<tr>
+  <td><img src='{% static "Bangla/ল.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/লাঠি.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/lathi.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/শ.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/শসা.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/sosha.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/ষ.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/ষাঁড়.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/sar.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/স.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/সানাই.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/sanai.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/হ.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/হাড়ি.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/hari.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/ড়.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/বাড়ি.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/bari.png" %}' alt="letter" width="20%" height="50%"></td>
+</tr>
+
+<tr>
+  <td><img src='{% static "Bangla/ঢ়.png" %}' alt="letter" width="20%" height="50%"></td>
+  <td><img src='{% static "Bangla/আষাঢ়.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/Ashar.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+  
+  <tr>
+    <td><img src='{% static "Bangla/য়.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/আয়না.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/ayna.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+  
+  <tr>
+    <td><img src='{% static "Bangla/ৎ.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/চিৎকার.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/chitkar.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+  
+  <tr>
+    <td><img src='{% static "Bangla/ং.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/রং.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/rong.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+  
+  <tr>
+    <td><img src='{% static "Bangla/ঃ.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/দুঃখ.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/dukhho.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+
+  <tr>
+    <td><img src='{% static "Bangla/ung.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/চাঁদ.png" %}' alt="letter" width="20%" height="50%"></td>
+    <td><img src='{% static "Bangla/chad.png" %}' alt="letter" width="20%" height="50%"></td>
+  </tr>
+
+      
+      </table>
+    </center>
+    
+
+
+</body>
+</html>
